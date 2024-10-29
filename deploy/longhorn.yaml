@@ -97,6 +97,7 @@ data:
       dataLocality: "disabled"
       unmapMarkSnapChainRemoved: "ignored"
       disableRevisionCounter: "true"
+      dataEngine: "v1"
 ---
 # Source: longhorn/templates/crds.yaml
 apiVersion: apiextensions.k8s.io/v1
@@ -4868,7 +4869,7 @@ spec:
         - --backing-image-manager-image
         - "longhornio/backing-image-manager:master-head"
         - --support-bundle-manager-image
-        - "longhornio/support-bundle-kit:v0.0.43"
+        - "longhornio/support-bundle-kit:v0.0.45"
         - --manager-image
         - "longhornio/longhorn-manager:master-head"
         - --service-account
